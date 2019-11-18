@@ -1,7 +1,10 @@
 ######## 18.11
 print('Hello')
-num_der = function(f, x, h){
-  (f(x + h) - f(x))/h
+
+H = 1000000
+
+num_der = function(f, x){
+  (f(x + H) - f(x))/H
 }
 
 f = function(x) exp(x)
